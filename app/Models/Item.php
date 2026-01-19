@@ -129,4 +129,16 @@ class Item extends Model
                     ->where('location_id', $locationId);
     }
 
+    public function promotions()
+    {
+        return $this->belongsToMany(Promotion::class, 'item_promotion', 'item_id', 'promotion_id')
+                    ->withTimestamps();
+    }
+
+    public function comboGroups()
+    {
+        return $this->belongsToMany(ComboGroup::class, 'combo_group_items', 'item_id', 'combo_group_id')
+                    ->withTimestamps();
+    }
+
 }

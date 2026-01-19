@@ -14,6 +14,7 @@ use App\Livewire\Product\PriceGroup\IndexComponent;
 use App\Livewire\Product\PriceGroup\ItemListComponent;
 use App\Livewire\ProductCategoryComponent;
 use App\Livewire\ProductComponent;
+use App\Livewire\Promotion\PromotionComponent;
 use App\Livewire\SaleTypeComponent;
 use App\Livewire\SizeComponent;
 use App\Livewire\TermForm;
@@ -48,6 +49,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/price-group', PriceGroupComponent::class)->name('price-group');
     Route::get('/product-items', ProductComponent::class)->name('products.items');
     Route::get('product/pricebook', IndexComponent::class)->name('products.pricebook.index');
+    Route::get('/promotion', PromotionComponent::class)->name('promotion.index');
     Route::get('/locations', LocationComponent::class)->name('locations');
     Route::get('attach/location', AttachUserLocation::class)->name('attach-locations');
     Route::get('/users', UserForm::class)->name('users');

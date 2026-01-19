@@ -184,6 +184,12 @@
                       <span>Items</span>
                   </a>
               </li>
+              <li>
+                  <a href="{{ route('promotion.index') }}" class="flex items-center gap-2 {{ Route::is('promotion.*') ? 'active-page' : '' }}">
+                      <span class="w-6 flex justify-center"><i class="ri-gift-line text-orange-600"></i></span>
+                      <span>Promotion</span>
+                  </a>
+              </li>
           </ul>
       </li>
 
