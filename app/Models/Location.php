@@ -19,4 +19,16 @@ class Location extends Model
     {
         return $this->belongsToMany(User::class);
     }
+
+    public function promotions()
+    {
+        return $this->belongsToMany(Promotion::class, 'promotion_location', 'location_id', 'promotion_id')
+                    ->withTimestamps();
+    }
+
+    public function combos()
+    {
+        return $this->belongsToMany(Combo::class, 'combo_location', 'location_id', 'combo_id')
+                    ->withTimestamps();
+    }
 }

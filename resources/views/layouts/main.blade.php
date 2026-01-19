@@ -130,11 +130,13 @@
                             <i class="fas fa-cube w-3.5 mr-2 text-[10px]"></i>
                             <span>Items</span>
                         </a>
-                        {{-- <a href="/products/pricing" class="flex items-center px-2.5 py-1.5 text-gray-400 text-xs rounded-md hover:text-gray-300 hover:bg-white/5 transition-colors">
+                        
+                        <a href="{{ route('promotion.index') }}" class="flex items-center px-2.5 py-1.5 text-gray-400 text-xs rounded-md hover:text-gray-300 hover:bg-white/5 transition-colors">
                             <i class="fas fa-dollar-sign w-3.5 mr-2 text-[10px]"></i>
-                            <span>Pricing</span>
+                            <span>Promotion</span>
                         </a>
-                        <a href="/products/suppliers" class="flex items-center px-2.5 py-1.5 text-gray-400 text-xs rounded-md hover:text-gray-300 hover:bg-white/5 transition-colors">
+                       
+                        {{-- <a href="/products/suppliers" class="flex items-center px-2.5 py-1.5 text-gray-400 text-xs rounded-md hover:text-gray-300 hover:bg-white/5 transition-colors">
                             <i class="fas fa-truck w-3.5 mr-2 text-[10px]"></i>
                             <span>Suppliers</span>
                         </a> --}}
